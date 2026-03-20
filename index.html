@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TCS - Home</title>
 	<style>
+			   .navbar {
+				   display: flex;
+				   justify-content: center;
+				   gap: 2rem;
+				   margin-bottom: 1.2rem;
+			   }
+			   .nav-link {
+				   color: #fff;
+				   text-decoration: none;
+				   font-size: 1.1rem;
+				   padding: 0.3rem 1rem;
+				   border-radius: 4px;
+				   transition: background 0.2s;
+			   }
+			   .nav-link:hover {
+				   background: #005fa3;
+			   }
 		body {
 			margin: 0;
 			font-family: 'Segoe UI', Arial, sans-serif;
@@ -73,17 +90,34 @@
 	</style>
 </head>
 <body>
-	<div class="header">
-		<h1>Tata Consultancy Services (TCS)</h1>
-		<p>Leading the way in IT services, consulting, and business solutions</p>
-	</div>
-	<div class="main">
-		<h2>Welcome to TCS</h2>
-		<p>
-			At TCS, we empower businesses worldwide with innovative technology solutions and consulting expertise.<br>
-			Discover our services, explore our culture, and join us in shaping the digital future.
-		</p>
-		<a href="#" class="cta-btn">Learn More</a>
-	</div>
-</body>
-</html>
+	   <div class="header">
+		   <nav class="navbar">
+			   <a href="#home" class="nav-link">Home</a>
+			   <a href="#contact" class="nav-link">Contact</a>
+		   </nav>
+		   <h1>Tata Consultancy Services (TCS)</h1>
+		   <p>Leading the way in IT services, consulting, and business solutions</p>
+	   </div>
+	   <div class="main" id="home">
+		   <h2>Welcome to TCS</h2>
+		   <p>
+			   At TCS, we empower businesses worldwide with innovative technology solutions and consulting expertise.<br>
+			   Discover our services, explore our culture, and join us in shaping the digital future.
+		   </p>
+		   <a href="#" class="cta-btn">Learn More</a>
+	   </div>
+	   <div class="main" id="contact" style="margin-top: 1.5rem;">
+		   <h2>Contact Us</h2>
+		   <p>Have questions or want to connect with TCS? Reach out to us below:</p>
+		   <form style="max-width:400px;margin:0 auto;text-align:left;">
+			   <label for="name">Name:</label><br>
+			   <input type="text" id="name" name="name" style="width:100%;padding:0.5rem;margin-bottom:1rem;border-radius:4px;border:1px solid #ccc;"><br>
+			   <label for="email">Email:</label><br>
+			   <input type="email" id="email" name="email" style="width:100%;padding:0.5rem;margin-bottom:1rem;border-radius:4px;border:1px solid #ccc;"><br>
+			   <label for="message">Message:</label><br>
+			   <textarea id="message" name="message" rows="4" style="width:100%;padding:0.5rem;border-radius:4px;border:1px solid #ccc;"></textarea><br>
+			   <button type="submit" class="cta-btn" style="margin-top:1rem;">Send</button>
+		   </form>
+	   </div>
+	</body>
+	</html>
